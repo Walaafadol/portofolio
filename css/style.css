@@ -74,6 +74,8 @@ li {
 
 .header-text .image img {
   max-width: 100%;
+  animation: up-and-down 5s linear infinite;
+  position: relative;
 }
 .header-text .image {
   flex-basis: 50%;
@@ -98,7 +100,9 @@ li {
 /* about-------------------- */
 .about-Me {
   color: var(--secondary-color);
-  padding: 70px 0;
+}
+.about-Me h1 {
+  margin-top: 30px;
 }
 .row1 {
   display: flex;
@@ -126,6 +130,7 @@ li {
 .row1 .col2 .text {
   padding: 10px 0;
   line-height: 1.8;
+  text-transform: capitalize;
 }
 
 .tabs {
@@ -175,10 +180,47 @@ li {
 .about-Me p {
   line-height: 1.8;
 }
-
+.tabcontent {
+  height: 250px;
+}
+p {
+  text-transform: capitalize;
+}
+.skills {
+  display: block;
+  background-color: #ababab;
+  height: 30px;
+  width: 100%;
+  border-radius: 20px;
+  position: relative;
+  margin-bottom: 20px;
+}
+.skills::after {
+  content: "";
+  background-color: var(--main-color);
+  width: 90%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  border-radius: 20px;
+}
+.csss::after {
+  width: 90%;
+}
+.jss::after {
+  width: 80%;
+}
+.tabcontent label {
+  margin-bottom: 15px;
+  display: block;
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 20px;
+}
 /* services--------------- */
 .services {
-  padding: 0px 0;
+  margin-top: 50px;
 }
 .services-list {
   display: grid;
@@ -188,7 +230,7 @@ li {
 }
 .services-list div {
   background-color: #262626;
-  padding: 40px;
+  padding: 30px;
   font-size: 13px;
   font-weight: 300;
   border-radius: 10px;
@@ -201,7 +243,7 @@ li {
 .services p {
   line-height: 1.8;
   padding-top: 20px;
-  width: 70%;
+  width: 90%;
   font-size: 20px;
 }
 .services h2 {
@@ -214,7 +256,7 @@ li {
 }
 /* portfolio--------- */
 .portfolio {
-  padding: 30px 0;
+  padding-top: 50px;
 }
 .work-list {
   display: grid;
@@ -340,7 +382,8 @@ li {
  */
 .row {
   display: flex;
-  margin-top: 30px;
+  padding-top: 50px;
+
   flex-wrap: wrap;
 }
 .col-one {
@@ -497,7 +540,7 @@ nav .fas {
     margin-top: 30px;
     max-height: 100%;
   }
-  .header-text .image img {
+  .header-text .image {
     display: none;
   }
 
@@ -529,11 +572,6 @@ nav .fas {
     flex-basis: 100%;
     margin-bottom: 30px;
   }
-  /* .row1 .col1 img {
-    width: 100%;
-    border-radius: 20px;
-    text-align: center;
-  } */
 
   .row1 .col2 {
     flex-basis: 100%;
@@ -560,5 +598,24 @@ nav .fas {
   }
   .col-two {
     flex-basis: 100%;
+  }
+  .tabcontent label {
+    font-size: 15px;
+  }
+}
+@media (min-width: 1000px) {
+  .about-Me {
+    margin-top: 50px;
+  }
+}
+/* animation 
+*/
+@keyframes up-and-down {
+  0%,
+  100% {
+    top: 0;
+  }
+  50% {
+    top: -20px;
   }
 }
