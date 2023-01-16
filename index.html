@@ -70,25 +70,29 @@
               <ul>
                 <li><p>I have A good experience at</p></li>
                 <li>
-                  <p>responsive <span>HTML / HTML5</span></p>
+                  <label>html</label>
+                  <span class="skills"></span>
                 </li>
                 <li>
-                  <p><span>CSS/CSS3</span></p>
+                  <label>css</label>
+                  <span class="skills csss"></span>
                 </li>
                 <li>
-                  <p><span>JavaScript</span></p>
+                  <label>JS</label>
+                  <span class="skills jss"></span>
                 </li>
-
-                <li><p>animation</p></li>
               </ul>
             </div>
+
             <div class="tabcontent none second">
               <ul>
                 <li>
                   <p>
                     Holding a Bachelor of Engineering (Honors) in Electronics
                     (Computer and Networks) From Sudan University of Science and
-                    Technology .
+                    Technology . i am passionate about building scalable
+                    software , creating effective solutions , and learning every
+                    day to grow professionally in the web development field.
                   </p>
                 </li>
               </ul>
@@ -130,41 +134,37 @@
           <div class="work">
             <img class="one" src="./images/Firmware-rafiki.png" />
             <div class="layer">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Veritatis error pariatur voluptatum illo quo, quisquam molestiae
-                eos, obcaecati expedita quae libero laborum vel itaque debitis
-                eum mollitia quidem praesentium dicta?
-              </p>
-              <a href=""><img src="./images/icons8-linking-50.png" /></a>
+              <p>market project</p>
+              <a target="_blank" href="https://walaafadol.github.io/market/"
+                ><img src="./images/icons8-linking-50.png"
+              /></a>
             </div>
           </div>
           <div class="work">
             <img class="one" src="./images/Update-amico.png" />
             <div class="layer">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Veritatis error pariatur voluptatum illo quo, quisquam molestiae
-                eos, obcaecati expedita quae libero laborum vel itaque debitis
-                eum mollitia quidem praesentium dicta?
-              </p>
-              <a href=""> <img src="./images/icons8-linking-50.png" /></a>
+              <p>kasper</p>
+              <a
+                target="_blank"
+                href=" https://walaafadol.github.io/template-2/"
+              >
+                <img src="./images/icons8-linking-50.png"
+              /></a>
             </div>
           </div>
           <div class="work">
             <img class="one" src="./images/Update-amico.png" />
             <div class="layer">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Veritatis error pariatur voluptatum illo quo, quisquam molestiae
-                eos, obcaecati expedita quae libero laborum vel itaque debitis
-                eum mollitia quidem praesentium dicta?
-              </p>
-              <a href=""><img src="./images/icons8-linking-50.png" /></a>
+              <p>elzero website</p>
+              <a target="_blank" href="https://walaafadol.github.io/template3/"
+                ><img src="./images/icons8-linking-50.png"
+              /></a>
             </div>
           </div>
         </div>
-        <button>more work</button>
+        <a href="https://walaafadol.github.io/cruds-project/"
+          ><button>more work</button></a
+        >
       </div>
     </div>
     <!-- contact--------------- -->
@@ -230,10 +230,31 @@
             >
           </div>
           <div class="col-two">
-            <form>
-              <input type="text" placeholder="your name" />
-              <input type="email" placeholder="your email" />
-              <textarea placeholder="your message"></textarea>
+            <form
+              id="form"
+              action="https://formspree.io/f/xwkjplre"
+              method="POST"
+              target="_blank"
+            >
+              <input
+                type="text"
+                placeholder="your name"
+                id="name"
+                name="name"
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="your email"
+                id="email"
+                required
+              />
+              <textarea
+                placeholder="your message"
+                id="message"
+                name="message"
+              ></textarea>
               <button type="submit">submit</button>
             </form>
           </div>
@@ -242,6 +263,7 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 
     <script src="./java script/main.js"></script>
   </body>
