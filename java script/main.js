@@ -26,16 +26,17 @@ tablinkArray.forEach((e) => {
 let menu = document.getElementById("menu");
 let close = document.getElementById("close");
 let open = document.getElementById("open");
-// close.onclick = function () {
-//   console.log("jjjjj");
-// };
+
 open.onclick = function () {
   menu.style.right = "0";
 };
 close.onclick = function () {
   menu.style.right = "-200px";
 };
-let about = document.getElementById("about");
-about.onclick = function () {
-  href = "#about-me";
+
+// form
+document.getElementById("form").onsubmit = function () {
+  document.querySelector("#name").value = "";
+  document.querySelector("#email").value = "";
+  document.querySelector("#message").value = "";
 };
